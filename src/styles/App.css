@@ -48,6 +48,50 @@ button:hover {
   background-color: #3a3f4b;
 }
 
+.start {
+  text-align: center;
+}
+
+.progress p {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #61dafb;
+}
+
+.question h2 {
+  font-size: 20px;
+  margin: 24px 0 16px;
+}
+
+.option {
+  display: block;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f5f7fa;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
 @media (max-width: 600px) {
   .quiz {
     width: 90%;
