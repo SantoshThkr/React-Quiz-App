@@ -48,6 +48,11 @@ button:hover {
   background-color: #3a3f4b;
 }
 
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
 .start {
   text-align: center;
 }
@@ -88,8 +93,20 @@ button:hover {
   background-color: #f5f7fa;
 }
 
+.option.selected {
+  border-color: #61dafb;
+  background-color: #e8f9fe;
+}
+
 .option input {
   margin-right: 10px;
+}
+
+.hint {
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #c0392b;
 }
 
 @media (max-width: 600px) {
