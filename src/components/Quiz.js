@@ -6,6 +6,7 @@ import Question from './Question';
 function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
+  const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
 
   const isLastQuestion = currentQuestion === questions.length - 1;
@@ -13,6 +14,10 @@ function Quiz() {
   const handleNext = () => {
     if (!selectedAnswer) {
       return;
+    }
+
+    if (selectedAnswer === questions[currentQuestion].answer) {
+      setScore(score + 1);
     }
 
     if (isLastQuestion) {
@@ -24,7 +29,14 @@ function Quiz() {
   };
 
   if (finished) {
-    return <h2 className="result">Quiz Completed!</h2>;
+    return (
+      <div className="result">
+        <h2>Quiz Completed!</h2>
+        <p>
+          Score: {score} / {questions.length}
+        </p>
+      </div>
+    );
   }
 
   return (
