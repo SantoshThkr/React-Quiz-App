@@ -109,6 +109,24 @@ button:disabled {
   color: #c0392b;
 }
 
+.result {
+  text-align: center;
+}
+
+.result p {
+  margin: 8px 0;
+}
+
+.result .score {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.result .message {
+  font-size: 18px;
+  color: #2e7d32;
+}
+
 @media (max-width: 600px) {
   .quiz {
     width: 90%;

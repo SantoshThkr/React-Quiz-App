@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import questions from '../data/questions';
 import Progress from './Progress';
 import Question from './Question';
+import Result from './Result';
 
 function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -28,15 +29,15 @@ function Quiz() {
     }
   };
 
+  const handleRestart = () => {
+    setCurrentQuestion(0);
+    setSelectedAnswer('');
+    setScore(0);
+    setFinished(false);
+  };
+
   if (finished) {
-    return (
-      <div className="result">
-        <h2>Quiz Completed!</h2>
-        <p>
-          Score: {score} / {questions.length}
-        </p>
-      </div>
-    );
+    return <Result score={score} total={questions.length} onRestart={handleRestart} />;
   }
 
   return (
