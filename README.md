@@ -1,40 +1,40 @@
 # React Quiz App
 
-A simple quiz application built with React.
+A simple quiz app built with React.
 
 ## Features
 
-- Multiple-choice questions
-- Score calculation
-- Progress indicator
-- Result screen
-- Restart quiz
-- Responsive UI
+* Multiple-choice questions
+* Score calculation
+* Progress indicator
+* Result screen
+* Restart quiz
+* Responsive UI
 
 ## Tech Stack
 
-- React
-- JavaScript
-- CSS
-- Jest
-- React Testing Library
+* React
+* JavaScript
+* CSS
+* Jest
+* React Testing Library
 
-## Installation
+## Setup
 
-```
+```bash
 npm install
 ```
 
-## Run
+Run the app:
 
-```
+```bash
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open `http://localhost:3000`.
 
 ## Test
 
-```
+```bash
 npm test
 ```
